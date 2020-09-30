@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+header{
+    background-color: #851944;
+    position: relative;
+}
+
+body{
+    background-color:#F2FFFC;
+    font-family: "Crimson Text", "Times New Roman", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer{
+    background-color: #000;
+    color: #FFF;
+    padding: 0.1em;
+    text-align: center;
+    font-size: 0.80em;
+    margin-top: auto;
+
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    padding-inline-start: 0px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+input, textarea{
+    max-width: 20em;
+    min-width: 20em;
+    min-height: 1.5em;
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+.contatos{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+ul{
+    border: 1px solid #ddd;
+    padding: 0.5em 0;
+    margin-right: 1em;
+}
+li{ 
+    list-style-type: none;
+    padding: 0 0.5em;
+}
+
+.id{
+    display: none;
+}
+
+.editar, .excluir{
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.editar{
+    color: blue;
+}
+
+.excluir{
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .contatos {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contatos {
+    grid-template-columns: 1fr;
+    }
+  }
+
+
+
+
+

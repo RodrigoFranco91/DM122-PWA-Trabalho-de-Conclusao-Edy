@@ -11,57 +11,52 @@
 <body>
     <header>
         <h1>Agenda de Contatos</h1>
-        <h2>Dono da Agenda: Rodrigo Franco de Lima</h2>
     </header>
-    <main>
         <h3>Cadastre um Contato:</h3>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"><br><br>
-            <label for="email">E-mail:</label>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" name="telefone"><br><br>
-            <label for="celular">Celular:</label>
-            <input type="text" id="celular" name="celular"><br><br>
-            <label for="comentario">Comentário:</label>
-            <textarea id="comentario" name="comentario"></textarea>
-            <button type="submit">Salvar</button>
-        </form>
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>E-mail</th>
-                <th>Telefone</th>
-                <th>Celular</th>
-                <th>Comentário</th>
-              </tr>
-              <tr>
-                <td>Rodrigo</td>
-                <td>rodrigo@</td>
-                <td>123467</td>
-                <td>123456</td>
-                <td>Aluno da pós</td>
-                <td>Alterar</td>
-                <td>Excluir</td>
-              </tr>
-        </table>
-    </main>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" maxlength="40">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" maxlength="40">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"maxlength="20">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" maxlength="20">
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" maxlength="40"></textarea>
+                <button type="submit">Salvar</button>
+            </form>
+            <h3>Contatos Cadastrados:</h3>
+            <div class="contatos">
+                <ul>
+                    <li class="id">1</li>
+                    <li>Rodrigo Franco</li>
+                    <li>rodrigo@gmail.com</li>
+                    <li>35 33333333</li>
+                    <li>Colega da faculdade</li>
+                    <li class="editar">Editar</li>
+                    <li class="excluir">Excluir</li>
+                </ul>
+                <ul>
+                    <li class="id">1</li>
+                    <li>Rodrigo Franco</li>
+                    <li>rodrigo@gmail.comrodrigo@gmail</li>
+                    <li>35 33333333</li>
+                    <li>Colega da faculdade</li>
+                    <li class="editar">Editar</li>
+                    <li class="excluir">Excluir</li>
+                </ul>
+                <ul>
+                    <li class="id">1</li>
+                    <li>Rodrigo Franco</li>
+                    <li>rodrigo@gmail.comrodrigo@gmail</li>
+                    <li>35 33333333</li>
+                    <li>Colega da faculdade</li>
+                    <li class="editar">Editar</li>
+                    <li class="excluir">Excluir</li>
+                </ul>
+            </div>
     <footer>
-        <nav>
-            <ul class="icones-redes-sociais">
-                <li>
-                    <a href="https://github.com/RodrigoFranco91" class="github" data-tooltip="Veja meus projetos">
-                        Github
-                    </a>
-                </li>
-                <li>
-                    <a href="https://br.linkedin.com/in/rodrigofrancodelima" class="linkedin" data-tooltip="Veja meu currículo">
-                        LinkedIn
-                    </a>
-                </li>
-            </ul>
-        </nav>
         <p>&copy; 2020 RFL Company - Todos os direitos reservados.</p>
     </footer>
 </body>

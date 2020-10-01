@@ -9,7 +9,9 @@ html {
 
 header{
     background-color: #851944;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
@@ -88,6 +90,11 @@ li{
 
 .excluir{
     color: red;
+}
+
+.agenda{
+    height: 50px;
+    border-radius: 100%;
 }
 
 @media screen and (max-width: 768px) {

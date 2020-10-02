@@ -1,0 +1,23 @@
+{
+    "name": "Trabalho Avaliativo DM122 - PWA - Lista de Contatos",
+    "short_name": "Lista de Contatos",
+    "theme_color": "#851944",
+    "background_color": "#F2FFFC",
+    "display": "standalone",
+    "scope": ".",
+    "start_url": "index.html",
+    "icons": [
+      {
+        "src": "assets/icons/favicon.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/android-launchericon-144-144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ],
+    "splash_pages": null
+  }
+  

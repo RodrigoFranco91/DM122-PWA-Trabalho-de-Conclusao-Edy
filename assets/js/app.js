@@ -1,3 +1,5 @@
+import agendaService from './agendaService';
+
 class App{
 
     constructor(){

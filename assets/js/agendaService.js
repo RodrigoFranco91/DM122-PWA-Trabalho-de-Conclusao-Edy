@@ -13,6 +13,23 @@ export default class agendaService{
         });
         
     }
+
+    getAll(){
+        return db.contatos.toArray();
+    }
+
+    get(id){
+        return db.contatos.get(id);
+    }
+
+    save(task){
+        return db.contatos.put(contato);
+    }
+
+    delete(id){
+        return db.contatos.delete(id);
+    }
+
 }
 
 

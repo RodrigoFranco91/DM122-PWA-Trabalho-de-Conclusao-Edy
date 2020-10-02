@@ -12,6 +12,13 @@ export default class agendaService{
             contatos:'++id,nome,email,telefone,comentario'
         });
         
+        db.on('populate', async () => {
+            await db.contatos.bulkPut([
+                {nome: 'Meu Próprio Contato', email: 'rodrigofl@pg.inatel.br',
+                telefone: '35 997400907', comentario: 'Minha Matricula é 40112'},
+            ]);
+        });
+
     }
 
     getAll(){
@@ -22,7 +29,7 @@ export default class agendaService{
         return db.contatos.get(id);
     }
 
-    save(task){
+    save(contato){
         return db.contatos.put(contato);
     }
 

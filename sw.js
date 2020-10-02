@@ -7,6 +7,7 @@ const assetsToCache = [
   './assets/css/style.css',
   './assets/js/app.js',
   './assets/js/agendaService.js',
+  './assets/js/htmlService.js',
   './index.html',
   '/'
 ];

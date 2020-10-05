@@ -61,5 +61,5 @@ async function cacheFirst(request) {
 }
 
 self.addEventListener('fetch', event => {
-  event.respondWith(networkFirst(event.request));
+  event.respondWith(cacheFirst(event.request));
 });

@@ -49,11 +49,13 @@ export default class htmlService{
         const contatoId = +ul.querySelector('li').getAttribute('data-item-id');
         const contato = await this.agendaService.get(contatoId);
         const form = document.querySelector('form');
+        const button = document.querySelector('button');
         form.id.value = +contato.id;
         form.nome.value = contato.nome;
         form.email.value = contato.email;
         form.telefone.value = contato.telefone;
         form.comentario.value = contato.comentario;
+        button.textContent = 'Alterar Contato';
     }
 
     addToHtmlList(contato){

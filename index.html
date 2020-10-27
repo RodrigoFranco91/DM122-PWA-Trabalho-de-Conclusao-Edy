@@ -20,11 +20,11 @@
             <form>
                 <input type="number" id="id" name="id" maxlength="40" value="-1" hidden>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" maxlength="40" value="">
+                <input type="text" id="nome" name="nome" maxlength="40" value="" required>
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" maxlength="40" value="">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone"maxlength="20" value="">
+                <input type="tel" id="telefone" name="telefone"maxlength="20" value="" required>
                 <label for="comentario">Comentário:</label>
                 <textarea id="comentario" name="comentario" maxlength="40"></textarea>
                 <button type="submit">Salvar</button>
@@ -34,7 +34,7 @@
 
             </div>
     <footer>
-        <p>&copy; 2020 RFL Company - Todos os direitos reservados.</p>
+        <p>&copy; 2020 Desenvolvido por Rodrigo Franco - Todos os direitos reservados.</p>
     </footer>
     <script src="https://unpkg.com/dexie@latest/dist/dexie.min.js"></script>
     <script type="module" src="assets/js/app.js"></script>

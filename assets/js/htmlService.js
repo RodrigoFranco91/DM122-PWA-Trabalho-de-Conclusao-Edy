@@ -16,7 +16,7 @@ export default class htmlService{
                 this.addContato(contato);
             }else{
                 this.updateContato(contatoId, contato);
-            }
+                }
             form.reset();
         })
     }
